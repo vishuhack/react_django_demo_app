@@ -31,7 +31,7 @@ pipeline{
         stage('Test'){
             steps{
                 echo "Test the new Build"
-                sh 'python -m pytest tests/test_foo.py --junitxml=pytest-report.xml'
+                sh 'python3 -m pytest tests/test_foo.py --junitxml=pytest-report.xml'
             }
             
         }
