@@ -31,6 +31,7 @@ pipeline{
         stage('Test'){
             steps{
                 echo "Test the new Build"
+                sh 'python -m pytest'
             }
             
         }
